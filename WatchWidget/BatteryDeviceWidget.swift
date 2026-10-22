@@ -32,6 +32,9 @@ public struct BatteryDeviceProvider: AppIntentTimelineProvider {
 }
 
 public struct BatteryDeviceWidget: Widget {
+	public init() {
+	}
+
 	public var body: some WidgetConfiguration {
 		AppIntentConfiguration(kind: "BatteryDevice", intent: SelectDeviceIntent.self, provider: BatteryDeviceProvider()) { entry in
 			BatteryDeviceWidgetView(entry: entry)
@@ -84,4 +87,4 @@ private struct BatteryDeviceWidgetView: View {
 			Color.clear
 		}
 	}
-}
+}

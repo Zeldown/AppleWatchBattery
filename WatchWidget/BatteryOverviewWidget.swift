@@ -21,6 +21,9 @@ public struct BatteryOverviewProvider: TimelineProvider {
 }
 
 public struct BatteryOverviewWidget: Widget {
+	public init() {
+	}
+
 	public var body: some WidgetConfiguration {
 		StaticConfiguration(kind: "BatteryOverview", provider: BatteryOverviewProvider()) { entry in
 			BatteryOverviewWidgetView(entry: entry)
@@ -52,4 +55,4 @@ private struct BatteryOverviewWidgetView: View {
 			Color.clear
 		}
 	}
-}
+}
