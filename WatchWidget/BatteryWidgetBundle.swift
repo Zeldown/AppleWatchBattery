@@ -10,4 +10,4 @@ public struct BatteryWidgetBundle: WidgetBundle {
 		BatteryDeviceWidget()
 		BatteryOverviewWidget()
 	}
-}
+}

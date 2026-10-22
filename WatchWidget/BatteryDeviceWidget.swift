@@ -22,7 +22,7 @@ public struct BatteryDeviceProvider: AppIntentTimelineProvider {
 
 	public func recommendations() -> [AppIntentRecommendation<SelectDeviceIntent>] {
 		return [BatteryKind.watch, BatteryKind.iPhone, BatteryKind.airPods, BatteryKind.airPodsCase].map { kind in
-			return AppIntentRecommendation(intent: SelectDeviceIntent(kind: kind), description: kind.title)
+			return AppIntentRecommendation(intent: SelectDeviceIntent(kind: kind), description: String(localized: kind.title))
 		}
 	}
 
@@ -87,4 +87,4 @@ private struct BatteryDeviceWidgetView: View {
 			Color.clear
 		}
 	}
-}
+}

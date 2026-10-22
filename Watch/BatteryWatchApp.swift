@@ -12,4 +12,4 @@ public struct BatteryWatchApp: App {
 			BatteryListView(monitor: WatchBatteryMonitor.shared)
 		}
 	}
-}
+}

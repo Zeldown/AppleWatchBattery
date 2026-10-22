@@ -55,4 +55,4 @@ private struct BatteryOverviewWidgetView: View {
 			Color.clear
 		}
 	}
-}
+}
