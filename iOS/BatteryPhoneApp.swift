@@ -21,7 +21,7 @@ public struct BatteryPhoneApp: App {
 			}
 		}
 		.backgroundTask(.appRefresh(BatteryPhoneApp.refreshIdentifier)) {
-			BatteryPhoneApp.schedule()
+			await BatteryPhoneApp.schedule()
 			PhoneBatteryMonitor.shared.push()
 		}
 	}
