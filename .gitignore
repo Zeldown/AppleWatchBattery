@@ -1,0 +1,14 @@
+*.xcodeproj
+iOS/Info.plist
+Watch/Info.plist
+Watch/*.entitlements
+WatchWidget/Info.plist
+WatchWidget/*.entitlements
+build/
+DerivedData/
+*.p12
+*.p8
+*.cer
+*.key
+*.csr
+.DS_Store
